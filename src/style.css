@@ -1,0 +1,17 @@
+.commentor_wrapper {
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.commentor_wrapper__cm {
+    font-family: inherit !important;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 3px 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
