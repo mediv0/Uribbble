@@ -1,0 +1,14 @@
+{
+    "name": "Dribbble Commentor",
+    "description": "Predefined Comments for Dribbble",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": ["https://dribbble.com/*"],
+            "css": ["style.css"],
+            "js": ["content.js"]
+        }
+    ],
+    "permissions": ["tabs"]
+}
