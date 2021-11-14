@@ -1,6 +1,11 @@
 // we use this cache to prevent re-rendering of the same text-nodes
 let fragmentCache: DocumentFragment | null = null;
 
+let textField: HTMLTextAreaElement | null = null;
+
+// used to dispatch input event on textfield
+const event = new Event("input", { bubbles: true, cancelable: true });
+
 export const generateTextNodes = (): DocumentFragment => {
     if (fragmentCache) {
         return fragmentCache;
@@ -12,9 +17,8 @@ export const generateTextNodes = (): DocumentFragment => {
 
     const title = document.createElement("p");
     title.classList.add("commentor_wrapper__title");
-    title.innerHTML = "Predefined comments"
+    title.innerHTML = "Predefined comments";
     fragment.appendChild(title);
-
 
     for (let i = 0; i < comments.length; i++) {
         const node = document.createElement("p");
@@ -39,18 +43,17 @@ export const insertCommentContainer = (): HTMLDivElement => {
 };
 
 const setupEventListeners = (el: HTMLDivElement): void => {
-    const textField = document.querySelector(".textarea-field") as HTMLTextAreaElement;
     el.addEventListener("click", (e) => {
         const target = e.target as HTMLElement;
         if (target.classList.contains("commentor_wrapper__cm")) {
             textField.value = target.innerHTML;
-            const event = new Event("input", { bubbles: true, cancelable: true });
             textField.dispatchEvent(event);
         }
     });
 };
 
 export const injectComments = (): void => {
+    textField = document.querySelector(".textarea-field") as HTMLTextAreaElement;
     const wrapper = insertCommentContainer();
     const textFragment = generateTextNodes();
     wrapper.appendChild(textFragment.cloneNode(true));
