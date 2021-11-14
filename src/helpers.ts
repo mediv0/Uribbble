@@ -7,55 +7,72 @@ let textField: HTMLTextAreaElement | null = null;
 const event = new Event("input", { bubbles: true, cancelable: true });
 
 export const generateTextNodes = (): DocumentFragment => {
-    if (fragmentCache) {
-        return fragmentCache;
-    }
+        if (fragmentCache) {
+                return fragmentCache;
+        }
 
-    const comments = ["Nice Shot! 🥰", "Hott 🔥", "It's Amazing", "Clean design", "Great work", "Well done", "Perfect", "It's cool", "Looks cool", "Awesome", "Fantastic", "I love it", "Superb ", "So cute"];
+        const comments = [
+                "Nice Shot! 🥰",
+                "Hott 🔥",
+                "It's Amazing",
+                "Clean design",
+                "Great work",
+                "Well done",
+                "Perfect",
+                "It's cool",
+                "Looks cool",
+                "Awesome",
+                "Fantastic",
+                "I love it",
+                "Superb ",
+                "So cute"
+        ];
 
-    const fragment = document.createDocumentFragment();
+        const fragment = document.createDocumentFragment();
 
-    const title = document.createElement("p");
-    title.classList.add("commentor_wrapper__title");
-    title.innerHTML = "Predefined comments";
-    fragment.appendChild(title);
+        const title = document.createElement("p");
+        title.classList.add("commentor_wrapper__title");
+        title.innerHTML = "Predefined comments";
+        fragment.appendChild(title);
 
-    for (let i = 0; i < comments.length; i++) {
-        const node = document.createElement("p");
-        node.innerHTML = comments[i];
-        node.classList.add("commentor_wrapper__cm");
-        fragment.appendChild(node);
-    }
-    fragmentCache = fragment;
-    return fragment;
+        for (let i = 0; i < comments.length; i++) {
+                const node = document.createElement("p");
+                node.innerHTML = comments[i];
+                node.classList.add("commentor_wrapper__cm");
+                fragment.appendChild(node);
+        }
+        fragmentCache = fragment;
+        return fragment;
 };
 
 export const insertCommentContainer = (): HTMLDivElement => {
-    const input = document.querySelector(".shot-comments-post");
-    // we use this wrapper to hold text nodes and show comments on the page
-    const wrapper = document.createElement("div");
-    wrapper.classList.add("commentor_wrapper");
+        const input = document.querySelector(".shot-comments-post");
+        // we use this wrapper to hold text nodes and show comments on the page
+        const wrapper = document.createElement("div");
+        wrapper.classList.add("commentor_wrapper");
 
-    // insert container before dribbble comment input
-    input.parentNode.insertBefore(wrapper, input.nextSibling);
+        // insert container before dribbble comment input
+        input.parentNode.insertBefore(wrapper, input.nextSibling);
 
-    return wrapper;
+        return wrapper;
 };
 
 const setupEventListeners = (el: HTMLDivElement): void => {
-    el.addEventListener("click", (e) => {
-        const target = e.target as HTMLElement;
-        if (target.classList.contains("commentor_wrapper__cm")) {
-            textField.value = target.innerHTML;
-            textField.dispatchEvent(event);
-        }
-    });
+        el.addEventListener("click", (e) => {
+                const target = e.target as HTMLElement;
+                if (target.classList.contains("commentor_wrapper__cm")) {
+                        textField.value = target.innerHTML;
+                        textField.dispatchEvent(event);
+                }
+        });
 };
 
 export const injectComments = (): void => {
-    textField = document.querySelector(".textarea-field") as HTMLTextAreaElement;
-    const wrapper = insertCommentContainer();
-    const textFragment = generateTextNodes();
-    wrapper.appendChild(textFragment.cloneNode(true));
-    setupEventListeners(wrapper);
+        textField = document.querySelector(
+                ".textarea-field"
+        ) as HTMLTextAreaElement;
+        const wrapper = insertCommentContainer();
+        const textFragment = generateTextNodes();
+        wrapper.appendChild(textFragment.cloneNode(true));
+        setupEventListeners(wrapper);
 };
