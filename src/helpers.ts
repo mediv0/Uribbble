@@ -28,11 +28,24 @@ export const insertCommentContainer = (): HTMLDivElement => {
     // insert container before dribbble comment input
     input.parentNode.insertBefore(wrapper, input.nextSibling);
 
-    return wrapper
-}
+    return wrapper;
+};
+
+const setupEventListeners = (el: HTMLDivElement): void => {
+    const textField = document.querySelector(".textarea-field") as HTMLTextAreaElement;
+    el.addEventListener("click", (e) => {
+        const target = e.target as HTMLElement;
+        if (target.classList.contains("commentor_wrapper__cm")) {
+            textField.value = target.innerHTML;
+            const event = new Event("input", { bubbles: true, cancelable: true });
+            textField.dispatchEvent(event);
+        }
+    });
+};
 
 export const injectComments = (): void => {
     const wrapper = insertCommentContainer();
     const textFragment = generateTextNodes();
     wrapper.appendChild(textFragment.cloneNode(true));
+    setupEventListeners(wrapper);
 };
