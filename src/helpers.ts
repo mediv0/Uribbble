@@ -9,6 +9,13 @@ export const generateTextNodes = (): DocumentFragment => {
     const comments = ["Nice Shot! 🥰", "Hott 🔥", "It's Amazing", "Clean design", "Great work", "Well done", "Perfect", "It's cool", "Looks cool", "Awesome", "Fantastic", "I love it", "Superb ", "So cute"];
 
     const fragment = document.createDocumentFragment();
+
+    const title = document.createElement("p");
+    title.classList.add("commentor_wrapper__title");
+    title.innerHTML = "Predefined comments"
+    fragment.appendChild(title);
+
+
     for (let i = 0; i < comments.length; i++) {
         const node = document.createElement("p");
         node.innerHTML = comments[i];
