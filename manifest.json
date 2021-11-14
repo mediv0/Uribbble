@@ -2,7 +2,7 @@
     "name": "Dribbble Commentor",
     "description": "Predefined Comments for Dribbble",
     "version": "1.0",
-    "manifest_version": 3,
+    "manifest_version": 2,
     "content_scripts": [
         {
             "matches": ["https://dribbble.com/*"],
