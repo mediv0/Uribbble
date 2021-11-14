@@ -5,7 +5,6 @@ const CopyPlugin = require("copy-webpack-plugin");
 module.exports = {
     entry: {
         content: "./src/index.ts",
-        background: "./src/background.ts",
     },
     devtool: "inline-source-map",
     module: {
