@@ -11,7 +11,7 @@ export const generateTextNodes = (): DocumentFragment => {
                 return fragmentCache;
         }
 
-        const titleText = "Use quick feedbacks";
+        const titleText = "Use quick feedback";
         const comments = [
                 "Nice Shot! 🥰",
                 "Hot 🔥",
