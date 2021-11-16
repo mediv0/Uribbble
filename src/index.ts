@@ -5,7 +5,11 @@ const callback: MutationCallback = function (mutationsList, observer) {
         for (let i = 0; i < mutationsList.length; i++) {
                 // we check if comment section is fully loaded, we inject our comments
                 // this will cause layout shift in the page ( PERFORMANCE ISSUE )
-                if (mutationsList[i].target.nodeName === "TEXTAREA") {
+                if (
+                        mutationsList[i].previousSibling &&
+                        (mutationsList[i].previousSibling as HTMLDivElement)
+                                .className === "shot-comments-list"
+                ) {
                         injectComments();
                         break;
                 }
@@ -14,5 +18,5 @@ const callback: MutationCallback = function (mutationsList, observer) {
 
 // Create an observer instance linked to the callback function
 const observer = new MutationObserver(callback);
-const config = { attributes: true, childList: true, subtree: true };
+const config = { attributes: false, childList: true, subtree: true };
 observer.observe(document.body, config);
