@@ -13,17 +13,17 @@ export const generateTextNodes = (): DocumentFragment => {
 
         const comments = [
                 "Nice Shot! 🥰",
-                "Hott 🔥",
+                "Hot 🔥",
                 "It's Amazing",
                 "Clean design",
                 "Great work",
                 "Well done",
-                "Perfect",
+                "Perfect 🙌",
                 "It's cool",
                 "Looks cool",
                 "Awesome",
                 "Fantastic",
-                "I love it",
+                "I love it ❤️",
                 "Superb ",
                 "So cute"
         ];
