@@ -1,6 +1,6 @@
 {
-    "name": "Dribbble Commentor",
-    "description": "Predefined Comments for Dribbble",
+    "name": "Uribbble",
+    "description": "Quick feedback component for dribbble",
     "version": "1.0",
     "manifest_version": 2,
     "content_scripts": [

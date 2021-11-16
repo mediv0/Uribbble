@@ -1,7 +1,7 @@
 {
-        "name": "commentator",
+        "name": "Uribbble",
         "version": "1.0.0",
-        "description": "Predefined Comments for Dribbble",
+        "description": "Quick feedback component for dribbble",
         "scripts": {
                 "build": "webpack build",
                 "test": "jest",
