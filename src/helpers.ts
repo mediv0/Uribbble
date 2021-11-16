@@ -11,6 +11,7 @@ export const generateTextNodes = (): DocumentFragment => {
                 return fragmentCache;
         }
 
+        const titleText = "Use quick feedbacks";
         const comments = [
                 "Nice Shot! 🥰",
                 "Hot 🔥",
@@ -32,7 +33,7 @@ export const generateTextNodes = (): DocumentFragment => {
 
         const title = document.createElement("p");
         title.classList.add("commentor_wrapper__title");
-        title.innerHTML = "Predefined comments";
+        title.innerHTML = titleText;
         fragment.appendChild(title);
 
         for (let i = 0; i < comments.length; i++) {
