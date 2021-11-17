@@ -1,28 +1,13 @@
-import { injectComments } from "./helpers";
+import { injectComments, observer } from "./helpers";
 
-if (document.querySelector(".non-overlay")) {
-        // if user open shot page directly we dont need to observe the page
-        injectComments();
+// check if we are in shot page
+const shotPage = document.querySelector(".non-overlay") as HTMLDivElement;
+if (shotPage) {
+        // if sidebar is open, we have to manually inject the component then observer for future changes
+        if (document.querySelector(".sidebar-open")) {
+                injectComments();
+        }
+        observer(shotPage);
 } else {
-        const callback: MutationCallback = function (mutationsList, _observer) {
-                // Use traditional 'for loops' for IE 11
-                for (let i = 0; i < mutationsList.length; i++) {
-                        // we check if comment section is fully loaded, we inject our comments
-                        // this will cause layout shift in the page ( PERFORMANCE ISSUE )
-                        if (
-                                mutationsList[i].target.nodeName ===
-                                        "TEXTAREA" &&
-                                mutationsList[i].attributeName ===
-                                        "data-tribute"
-                        ) {
-                                injectComments();
-                                break;
-                        }
-                }
-        };
-
-        // Create an observer instance linked to the callback function
-        const observer = new MutationObserver(callback);
-        const config = { attributes: true, childList: true, subtree: true };
-        observer.observe(document.body, config);
+        observer(document.querySelector(".shot-overlay"));
 }

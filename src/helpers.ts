@@ -77,3 +77,24 @@ export const injectComments = (): void => {
         wrapper.appendChild(textFragment.cloneNode(true));
         setupEventListeners(wrapper);
 };
+
+export const observer = (el: HTMLElement): void => {
+        const _observer = new MutationObserver((mutationsList, _) => {
+                // Use traditional 'for loops' for IE 11
+                for (let i = 0; i < mutationsList.length; i++) {
+                        // we check if comment section is fully loaded, we inject our comments
+                        // this will cause layout shift in the page ( PERFORMANCE ISSUE )
+                        if (
+                                mutationsList[i].target.nodeName ===
+                                        "TEXTAREA" &&
+                                mutationsList[i].attributeName ===
+                                        "data-tribute"
+                        ) {
+                                injectComments();
+                                break;
+                        }
+                }
+        });
+        const config = { attributes: true, childList: true, subtree: true };
+        _observer.observe(el, config);
+};
