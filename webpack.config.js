@@ -36,7 +36,8 @@ module.exports = {
                 new CopyPlugin({
                         patterns: [
                                 path.resolve(__dirname, "manifest.json"),
-                                path.resolve(__dirname, "src", "style.css")
+                                path.resolve(__dirname, "src", "style.css"),
+                                { from: "icons", to: "icons" }
                         ]
                 }),
                 new ZipPlugin({
