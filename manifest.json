@@ -1,14 +1,19 @@
 {
-    "name": "Uribbble",
-    "description": "Quick feedback component for dribbble",
-    "version": "1.0",
-    "manifest_version": 2,
-    "content_scripts": [
-        {
-            "matches": ["https://dribbble.com/*"],
-            "css": ["style.css"],
-            "js": ["content.js"]
-        }
-    ],
-    "permissions": ["tabs"]
+        "name": "Uribbble",
+        "description": "Drop comments just with a click on Dribbble",
+        "version": "1.0",
+        "manifest_version": 2,
+        "content_scripts": [
+                {
+                        "matches": ["https://dribbble.com/*"],
+                        "css": ["style.css"],
+                        "js": ["content.js"]
+                }
+        ],
+        "icons": {
+                "16": "./icons/icon16.png",
+                "48": "./icons/icon48.png",
+                "128": "./icons/icon128.png"
+        },
+        "permissions": ["tabs"]
 }
