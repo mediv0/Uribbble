@@ -13,7 +13,8 @@
         "icons": {
                 "16": "icons/uribbble_16.png",
                 "48": "icons/uribbble_48.png",
-                "128": "icons/uribbble_64.png"
+                "128": "icons/uribbble_64.png",
+                "128": "icons/uribbble_96.png"
         },
         "permissions": ["tabs"]
 }
