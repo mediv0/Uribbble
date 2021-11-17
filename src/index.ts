@@ -6,9 +6,10 @@ const callback: MutationCallback = function (mutationsList, observer) {
                 // we check if comment section is fully loaded, we inject our comments
                 // this will cause layout shift in the page ( PERFORMANCE ISSUE )
                 if (
-                        mutationsList[i].previousSibling &&
-                        (mutationsList[i].previousSibling as HTMLDivElement)
-                                .className === "shot-comments-list"
+                        (mutationsList[i].target as HTMLDivElement)
+                                .className === "sidebar-scrolling-container" &&
+                        (mutationsList[i].addedNodes[0] as HTMLDivElement)
+                                .className === "shot-sidebar-contents"
                 ) {
                         injectComments();
                         break;
