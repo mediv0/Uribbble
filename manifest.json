@@ -16,7 +16,5 @@
                 "69": "icons/uribbble_64.png",
                 "96": "icons/uribbble_96.png",
                 "128": "icons/uribbble_128.png"
-
-        },
-        "permissions": ["tabs"]
+        }
 }
