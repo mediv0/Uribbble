@@ -1,6 +1,6 @@
 <div align="center">
 	<p align="center">
-		<img src="https://github.com/Unwrapstudio/Uribbble/blob/master/Logo.png?raw=true" width="200">
+		<img src="https://github.com/Unwrapstudio/Uribbble/blob/master/doc-pics/Logo.png?raw=true" width="200">
 	</p>
   <h1 align="center">Uribbble</h1>
   <p align="center">Drop comments just with a click on Dribbble</p>
@@ -12,6 +12,15 @@
 <br />
 
 ---
+
+## How Uribbble works
+
+Our powerful feedback plugin helps you to quickly give Dribbble feedbacks, You can easily select random feedbacks and send it to your Dribbble friends or team members, You don't have to type feedbacks every time, just use our automatically generated feedbacks and send them by one click.
+
+<div align="center">
+<img src="https://github.com/Unwrapstudio/Uribbble/blob/master/doc-pics/promo.jpg?raw=true">
+</div>
+
 
 ## Share on Social Media
 
