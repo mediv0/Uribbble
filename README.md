@@ -1,9 +1,9 @@
 <div align="center">
 	<p align="center">
-		<img src="" width="200">
+		<img src="https://github.com/Unwrapstudio/Uribbble/blob/master/Logo.png?raw=true" width="200">
 	</p>
   <h1 align="center">Uribbble</h1>
-  <p align="center">Quick feedback plugin for dribbble</p>
+  <p align="center">Drop comments just with a click on Dribbble</p>
 	
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-orange.svg)](https://github.com/mediv0/chill-club/compare) 
 [![License](https://img.shields.io/github/license/mediv0/chill-club)](https://img.shields.io/github/license/mediv0/v-bucket) 
