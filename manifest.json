@@ -1,7 +1,7 @@
 {
         "name": "Uribbble",
         "description": "Drop comments just with a click on Dribbble",
-        "version": "1.0",
+        "version": "1.0.1",
         "manifest_version": 2,
         "content_scripts": [
                 {
