@@ -33,12 +33,12 @@ export const generateTextNodes = (): DocumentFragment => {
 
         const title = document.createElement("p");
         title.classList.add("commentor_wrapper__title");
-        title.innerHTML = titleText;
+        title.innerText = titleText;
         fragment.appendChild(title);
 
         for (let i = 0; i < comments.length; i++) {
                 const node = document.createElement("p");
-                node.innerHTML = comments[i];
+                node.innerText = comments[i];
                 node.classList.add("commentor_wrapper__cm");
                 fragment.appendChild(node);
         }
@@ -62,7 +62,7 @@ const setupEventListeners = (el: HTMLDivElement): void => {
         el.addEventListener("click", (e) => {
                 const target = e.target as HTMLElement;
                 if (target.classList.contains("commentor_wrapper__cm")) {
-                        textField.value = target.innerHTML;
+                        textField.value = target.innerText;
                         textField.dispatchEvent(event);
                 }
         });
