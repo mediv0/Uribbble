@@ -32,10 +32,10 @@ Our powerful feedback plugin helps you to quickly give Dribbble feedbacks, You c
 
 Support the plugin by sharing it on social media
 
-[![Share Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/intent/tweet?url=https://chill-club.vercel.app/&text=Check%20out%20chill-club.vercel.app%20%E2%9A%A1%EF%B8%8F%0A%0AThe%20best%20place%20to%20enjoy%20Hip%20hop%20beats%20to%20Relax%20or%20Study!%20%F0%9F%8E%A7%20%F0%9F%94%A5%0A%0A#lofi%20#anime%20#lofi_music) 
-[![Share Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/sharer/sharer.php?u=https://chill-club.vercel.app/)
-[![Share Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/shareArticle?mini=true&url=https://chill-club.vercel.app/) 
-[![Share Pinterest](	https://img.shields.io/badge/Pinterest-%23E60023.svg?&style=for-the-badge&logo=Pinterest&logoColor=white)](https://pinterest.com/pin/create/button/?url=https://chill-club.vercel.app/&media=&description=Check%20out%20chill-club.vercel.app%20%E2%9A%A1%EF%B8%8F%0A%0AThe%20best%20place%20to%20enjoy%20Hip%20hop%20beats%20to%20Relax%20or%20Study!%20%F0%9F%8E%A7%20%F0%9F%94%A5%0A%0A#lofi%20#anime%20#lofi_music) 
+[![Share Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/intent/tweet?url=https://github.com/Unwrapstudio/Uribbble&text=Uribbble,%20an%20open-source%20feedback%20plugin%20for%20dribbble.%0AYou%20can%20easily%20select%20random%20feedbacks%20and%20send%20it%20to%20your%20Dribbble%20friends%20or%20team%20members,%20%0ADownload%20for:%0AChrome:%20shorturl.at/qEUX1%0AMozilla:%20shorturl.at/gmK58) 
+[![Share Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/sharer/sharer.php?u=https://github.com/Unwrapstudio/Uribbble)
+[![Share Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/Unwrapstudio/Uribbble) 
+[![Share Pinterest](	https://img.shields.io/badge/Pinterest-%23E60023.svg?&style=for-the-badge&logo=Pinterest&logoColor=white)](https://pinterest.com/pin/create/button/?url=https://github.com/Unwrapstudio/Uribbble&media=&description=Uribbble,%20an%20open-source%20feedback%20plugin%20for%20dribbble.%0AYou%20can%20easily%20select%20random%20feedbacks%20and%20send%20it%20to%20your%20Dribbble%20friends%20or%20team%20members,%20%0ADownload%20for:%0AChrome:%20shorturl.at/qEUX1%0AMozilla:%20shorturl.at/gmK58) 
 
 ## Development
 
