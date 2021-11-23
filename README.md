@@ -24,7 +24,7 @@ Our powerful feedback plugin helps you to quickly give Dribbble feedbacks, You c
 ## Download Our Plugin
 
 [![Direct Download](https://raw.githubusercontent.com/Unwrapstudio/Uribbble/master/doc-pics/direct_dl.svg)](https://github.com/Unwrapstudio/Uribbble/releases)
-[![Google Chrome](https://raw.githubusercontent.com/Unwrapstudio/Uribbble/master/doc-pics/chrome_dl.svg)](https://github.com/Unwrapstudio/Uribbble)
+[![Google Chrome](https://raw.githubusercontent.com/Unwrapstudio/Uribbble/master/doc-pics/chrome_dl.svg)](https://chrome.google.com/webstore/detail/uribbble/pgemkeddakaljihgcfkbfipkdjphmepd?hl=en)
 [![Mozilla Firefox](https://raw.githubusercontent.com/Unwrapstudio/Uribbble/master/doc-pics/firefox_dl.svg)](https://addons.mozilla.org/en-US/firefox/addon/uribbble/)
 
 
